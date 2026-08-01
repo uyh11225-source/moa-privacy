@@ -109,7 +109,7 @@
 
       function buildIntentUrl() {
         var query = buildQueryString();
-        var path = APP_PATH + query;
+        var path = APP_PATH + '/' + query;
         var encodedFallback = encodeURIComponent(FALLBACK_URL);
         return (
           'intent://' +
