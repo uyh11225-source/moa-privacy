@@ -1,18 +1,160 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>개인정보처리방침</title><style>
-:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#070914;color:#eef2ff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif;line-height:1.72}main{max-width:860px;margin:auto;padding:56px 22px 80px}.badge{display:inline-block;padding:6px 10px;border:1px solid #30395f;border-radius:999px;color:#aab8ff;font-size:13px}h1{font-size:34px;line-height:1.25;margin:18px 0 8px}h2{font-size:21px;margin:34px 0 10px;color:#dce3ff}p,li{color:#c6cce0}a{color:#82a7ff}.card{background:#111529;border:1px solid #252c49;border-radius:16px;padding:20px;margin:18px 0}.notice{border-left:4px solid #5b7cff;padding:14px 16px;background:#10162d;border-radius:8px}footer{margin-top:50px;padding-top:22px;border-top:1px solid #252c49;color:#8991aa;font-size:13px}ul{padding-left:22px}
-</style></head><body><main><span class="badge">PICKAI</span><h1>개인정보처리방침</h1><nav class="card"><a href="privacy-policy.html">개인정보처리방침</a> · <a href="terms.html">이용약관</a> · <a href="account-deletion.html">계정 삭제 안내</a> · <a href="contact.html">문의</a></nav>
-<p>시행일: 2026년 8월 3일</p>
-<div class="notice"><strong>출시 전 확인:</strong> 운영자명과 문의 이메일을 실제 정보로 변경하세요.</div>
-<h2>1. 개인정보의 처리 목적</h2>
-<p>PICKAI는 회원 인증, 서비스 제공, 관심종목 및 이용 기록 관리, AI 분석 기능 제공, 문의 대응, 보안 및 부정 이용 방지를 위해 필요한 범위에서 개인정보를 처리합니다.</p>
-<h2>2. 처리하는 개인정보 항목</h2>
-<ul><li>소셜 로그인: 제공자, 소셜 계정 식별자, 이메일, 이름 또는 닉네임, 프로필 이미지(제공되는 경우)</li><li>서비스 이용: 관심종목, AI 분석 요청 및 결과, 포인트·멤버십 이용 내역, 앱 설정</li><li>자동 생성 정보: 접속 일시, IP 주소, 기기·앱 정보, 오류 및 보안 로그</li><li>사용자가 선택한 경우: 차트 분석을 위해 업로드하거나 촬영한 이미지</li></ul>
-<p>서비스는 소셜 계정의 비밀번호를 수집하거나 저장하지 않습니다.</p>
-<h2>3. 보관 기간</h2><p>회원 정보와 서비스 이용 기록은 회원 탈퇴 시 지체 없이 삭제합니다. 다만 관계 법령에 따른 보관 의무 또는 분쟁·부정 이용 방지를 위해 필요한 정보는 필요한 최소 기간 동안 별도로 보관할 수 있습니다.</p>
-<h2>4. 제3자 제공</h2><p>이용자의 동의 또는 법령상 근거가 있는 경우를 제외하고 개인정보를 제3자에게 판매하거나 제공하지 않습니다.</p>
-<h2>5. 처리 위탁 및 국외 이전</h2><p>클라우드 서버, 소셜 로그인 제공자, AI 처리 서비스를 이용할 수 있습니다. 실제 사용 업체와 저장 위치는 출시 전 운영 환경에 맞게 추가 고지해야 합니다.</p>
-<h2>6. 이미지 및 AI 분석 정보</h2><p>차트 이미지는 분석 기능 제공을 위해 서버 또는 AI 처리 시스템으로 전송될 수 있습니다. 저장 여부와 보관 기간은 실제 운영 방식에 맞게 고지해야 합니다.</p>
-<h2>7. 이용자의 권리</h2><p>이용자는 앱에서 로그아웃하거나 계정을 삭제할 수 있습니다. 자세한 내용은 <a href="account-deletion.html">계정 삭제 안내</a>를 확인하세요.</p>
-<h2>8. 안전성 확보 조치</h2><ul><li>HTTPS 전송</li><li>인증 토큰의 안전한 저장</li><li>서버 접근 권한 제한</li><li>비밀키의 앱 외부 보관</li></ul>
-<h2>9. 문의</h2><div class="card">운영자: 운영자명 또는 사업자명 입력<br>이메일: <a href="mailto:YOUR_SUPPORT_EMAIL@example.com">YOUR_SUPPORT_EMAIL@example.com</a></div>
-<footer>© 2026 PICKAI. All rights reserved.</footer></main></body></html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>개인정보처리방침 — PICKAI</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background: #050510;
+      color: #f5f5f7;
+      line-height: 1.7;
+      margin: 0;
+      padding: 24px 16px 48px;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; }
+    .brand { font-size: 13px; color: #a1a1aa; letter-spacing: 0.04em; margin-bottom: 8px; }
+    h1 { font-size: 28px; margin: 0 0 8px; font-weight: 700; }
+    .meta { color: #a1a1aa; font-size: 14px; margin-bottom: 32px; }
+    h2 { font-size: 18px; margin: 28px 0 10px; font-weight: 700; }
+    p, li { font-size: 15px; color: #d4d4d8; }
+    ul { padding-left: 20px; }
+    a { color: #60a5fa; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #27272a;
+      font-size: 14px;
+      color: #a1a1aa;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">PICKAI</div>
+    <h1>개인정보처리방침</h1>
+    <p class="meta">시행일: 2026년 8월 3일<br />서비스 운영자: PICKAI</p>
+
+    <h2>1. 개인정보의 처리 목적</h2>
+    <p>
+      PICKAI(이하 “서비스”)는 회원 인증, 서비스 제공, 관심종목 관리, AI 분석 기능 제공,
+      포인트·멤버십 운영, 문의 대응, 보안 및 부정 이용 방지를 위해 필요한 범위에서 개인정보를 처리합니다.
+    </p>
+
+    <h2>2. 처리하는 개인정보 항목</h2>
+    <p>서비스는 다음 정보를 처리할 수 있습니다. 소셜 로그인 제공자가 제공하지 않는 항목은 수집되지 않을 수 있습니다.</p>
+    <ul>
+      <li>
+        <strong>Google 로그인:</strong> Google 계정 식별자, 이메일, 이름(닉네임으로 사용), 프로필 이미지(제공되는 경우)
+      </li>
+      <li>
+        <strong>Naver 로그인:</strong> Naver 계정 식별자, 이메일, 닉네임, 이름(제공되는 경우), 프로필 이미지(제공되는 경우)
+      </li>
+      <li>
+        <strong>계정·서비스 이용 정보(서버 저장):</strong> 내부 사용자 식별자, 로그인 세션, 관심종목, AI 분석 기록,
+        포인트 지갑 잔액 및 포인트 거래 내역, 포인트 예약(차감) 기록, 멤버십(플랜) 정보
+      </li>
+      <li>
+        <strong>무료 체험 포인트 중복 지급 방지:</strong> 앱 설치 식별값(installationId)은 원본 형태로 저장하지 않고,
+        서버에서 HMAC 해시값(installation_id_hash)으로 변환하여 처리할 수 있습니다.
+      </li>
+      <li>
+        <strong>유료 상품 구매(해당 기능 이용 시):</strong> Google Play 구매 검증을 위해 상품 ID, 구매 토큰, 주문 ID 등
+        Google Play에서 발급된 구매 식별 정보가 서버에 기록될 수 있습니다.
+      </li>
+      <li>
+        <strong>투자 부적 생성 기능(이용 시):</strong> 생성 요청 정보 및 생성된 이미지가 서버에 저장될 수 있습니다.
+      </li>
+      <li>
+        <strong>최근 본 종목:</strong> 사용자 기기(앱 내부 저장소)에 로컬로 저장될 수 있으며, 서버 DB에 별도로 저장되지 않습니다.
+      </li>
+      <li>
+        <strong>차트 이미지 분석(이용자가 선택한 경우):</strong> 업로드·촬영한 차트 이미지는 분석 처리를 위해 서버를 경유하여
+        AI API로 전송될 수 있습니다. 차트 이미지 파일 자체를 서버에 장기 보관하지 않을 수 있으며,
+        분석 결과 요약은 AI 분석 기록에 포함될 수 있습니다.
+      </li>
+      <li>
+        <strong>자동 생성 정보:</strong> 접속 일시, IP 주소, 기기·앱 정보, 오류 및 보안 로그
+      </li>
+    </ul>
+    <p>서비스는 소셜 계정의 비밀번호를 수집하거나 저장하지 않습니다. OAuth 클라이언트 시크릿 등 서버 인증 비밀키는 이용자에게 공개되지 않습니다.</p>
+
+    <h2>3. 보관 및 파기</h2>
+    <p>
+      회원 정보와 서버에 저장된 서비스 이용 기록은 회원 탈퇴(계정 삭제) 시 지체 없이 삭제됩니다.
+      다만 관계 법령에 따른 보관 의무가 있거나, 분쟁·부정 이용 방지를 위해 필요한 정보는
+      해당 목적에 필요한 최소 범위에서 별도로 보관할 수 있습니다.
+    </p>
+    <p>
+      회원 탈퇴 후에도 무료 체험 포인트 중복 지급 방지를 위해, 소셜 로그인 제공자와 제공자별 계정 식별자
+      (이메일·닉네임이 아닌 provider + provider_user_id)가 <code>welcome_bonus_social_claims</code> 등에
+      유지될 수 있습니다.
+    </p>
+    <p>기기에 로컬 저장된 최근 본 종목 정보는 앱 삭제 또는 기기 저장소 삭제 시 제거될 수 있습니다.</p>
+
+    <h2>4. 제3자 제공</h2>
+    <p>
+      이용자의 동의 또는 법령상 근거가 있는 경우를 제외하고 개인정보를 제3자에게 판매하거나 제공하지 않습니다.
+    </p>
+
+    <h2>5. 처리 위탁 및 AI 분석(API 연동)</h2>
+    <p>서비스는 다음과 같은 외부 서비스를 이용할 수 있습니다.</p>
+    <ul>
+      <li><strong>Google / Naver:</strong> 소셜 로그인 인증</li>
+      <li><strong>금융·시세 데이터 제공자:</strong> 시세·종목 정보 조회</li>
+      <li><strong>OpenAI:</strong> AI 종목 분석 및 차트 이미지 분석</li>
+      <li><strong>클라우드 서버:</strong> 서비스 운영 및 데이터 저장</li>
+    </ul>
+
+    <h2>6. OpenAI로 전송되는 정보</h2>
+    <p>AI 분석 요청 시 OpenAI API로 다음과 같은 정보가 전송될 수 있습니다. 계정 식별·결제 정보는 포함하지 않습니다.</p>
+    <ul>
+      <li>
+        <strong>종목 AI 분석:</strong> 종목 코드(symbol), 종목명, 시장(market), 섹터(있는 경우),
+        시세·캔들·기술지표 등 분석에 필요한 시장 데이터
+      </li>
+      <li>
+        <strong>차트 이미지 AI 분석:</strong> 이용자가 선택한 차트 이미지, 종목 코드·종목명·시장,
+        봉 주기(timeframe), 분석에 필요한 가격 관련 정보
+      </li>
+    </ul>
+    <p>다음 정보는 OpenAI API 요청에 포함되지 않도록 서버에서 처리합니다.</p>
+    <ul>
+      <li>이메일, 닉네임, 내부 사용자 ID(userId)</li>
+      <li>포인트 잔액·거래 내역, 결제·구매 정보</li>
+      <li>로그인 세션 토큰, OAuth 비밀키</li>
+    </ul>
+
+    <h2>7. 이용자의 권리 및 계정 삭제</h2>
+    <p>
+      이용자는 앱에서 로그아웃하거나 계정을 삭제할 수 있습니다.
+      계정 삭제 방법과 삭제·유지되는 데이터는
+      <a href="account-deletion.html">계정 및 데이터 삭제 안내</a>를 참고해 주세요.
+    </p>
+
+    <h2>8. 안전성 확보 조치</h2>
+    <ul>
+      <li>HTTPS 전송</li>
+      <li>인증 토큰의 안전한 저장</li>
+      <li>서버 접근 권한 제한</li>
+      <li>API 비밀키의 앱 외부 보관</li>
+    </ul>
+
+    <h2>9. 문의</h2>
+    <p>
+      서비스 운영자: PICKAI<br />
+      문의 이메일: <a href="mailto:uyh00001@gmail.com">uyh00001@gmail.com</a><br />
+      <a href="contact.html">문의하기 페이지</a>
+    </p>
+
+    <div class="footer">
+      <a href="terms.html">이용약관</a> ·
+      <a href="contact.html">문의하기</a> ·
+      <a href="account-deletion.html">계정 삭제 안내</a>
+    </div>
+  </div>
+</body>
+</html>
