@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PICKAI 네이버 로그인</title>
+  <title>픽AI 네이버 로그인</title>
   <style>
     * { box-sizing: border-box; }
     body {
@@ -69,13 +69,13 @@
     <h1 id="title">로그인 처리 중</h1>
     <p id="message">잠시만 기다려 주세요.<br />앱으로 자동 이동됩니다.</p>
     <p id="error" class="err" hidden></p>
-    <button id="openApp" type="button">PICKAI 앱으로 돌아가기</button>
+    <button id="openApp" type="button">픽AI 앱으로 돌아가기</button>
   </div>
   <script>
     (function () {
-      var APP_SCHEME = 'marketlens';
-      var APP_PATH = 'naver-auth';
-      var APP_PACKAGE = 'com.marketlens.app';
+      var APP_SCHEME = 'chartlens';
+      var APP_PATH = 'auth/naver';
+      var APP_PACKAGE = 'com.marketlens.chartlens';
       var FALLBACK_URL =
         'https://uyh11225-source.github.io/moa-privacy/naver-callback.html';
 
@@ -109,7 +109,7 @@
 
       function buildIntentUrl() {
         var query = buildQueryString();
-        var path = APP_PATH + '/' + query;
+        var path = APP_PATH + query;
         var encodedFallback = encodeURIComponent(FALLBACK_URL);
         return (
           'intent://' +
