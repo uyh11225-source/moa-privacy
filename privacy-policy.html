@@ -1,433 +1,160 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MoA 개인정보처리방침</title>
-    <style>
-      :root {
-        color-scheme: light;
-        --text: #1f2937;
-        --muted: #6b7280;
-        --border: #e5e7eb;
-        --surface: #f9fafb;
-        --primary: #2563eb;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          "Noto Sans KR", sans-serif;
-        line-height: 1.65;
-        color: var(--text);
-        background: #fff;
-      }
-      main {
-        max-width: 720px;
-        margin: 0 auto;
-        padding: 24px 20px 48px;
-      }
-      h1 {
-        font-size: 1.5rem;
-        margin: 0 0 8px;
-      }
-      .meta {
-        color: var(--muted);
-        font-size: 0.9rem;
-        margin-bottom: 24px;
-      }
-      h2 {
-        font-size: 1.05rem;
-        margin: 28px 0 10px;
-      }
-      h3 {
-        font-size: 0.98rem;
-        margin: 18px 0 8px;
-      }
-      p,
-      li {
-        font-size: 0.95rem;
-      }
-      ul {
-        padding-left: 1.25rem;
-      }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        font-size: 0.9rem;
-        margin: 12px 0;
-      }
-      th,
-      td {
-        border: 1px solid var(--border);
-        padding: 10px 12px;
-        vertical-align: top;
-        text-align: left;
-      }
-      th {
-        background: var(--surface);
-      }
-      a {
-        color: var(--primary);
-      }
-      .note {
-        background: var(--surface);
-        border: 1px solid var(--border);
-        border-radius: 8px;
-        padding: 12px 14px;
-        font-size: 0.9rem;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>MoA 개인정보처리방침</h1>
-      <p class="meta">
-        시행일: 2026년 8월 16일 · 문의:
-        <a href="mailto:uyh00001@gmail.com">uyh00001@gmail.com</a><br />
-        공개 URL:
-        <a href="https://uyh11225-source.github.io/moa-privacy/privacy-policy.html"
-          >https://uyh11225-source.github.io/moa-privacy/privacy-policy.html</a
-        >
-      </p>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>개인정보처리방침 — 픽AI</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background: #050510;
+      color: #f5f5f7;
+      line-height: 1.7;
+      margin: 0;
+      padding: 24px 16px 48px;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; }
+    .brand { font-size: 13px; color: #a1a1aa; letter-spacing: 0.04em; margin-bottom: 8px; }
+    h1 { font-size: 28px; margin: 0 0 8px; font-weight: 700; }
+    .meta { color: #a1a1aa; font-size: 14px; margin-bottom: 32px; }
+    h2 { font-size: 18px; margin: 28px 0 10px; font-weight: 700; }
+    p, li { font-size: 15px; color: #d4d4d8; }
+    ul { padding-left: 20px; }
+    a { color: #60a5fa; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #27272a;
+      font-size: 14px;
+      color: #a1a1aa;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">픽AI</div>
+    <h1>개인정보처리방침</h1>
+    <p class="meta">시행일: 2026년 8월 3일<br />서비스 운영자: 픽AI</p>
 
-      <p>
-        MoA(앱 표시명: 중개비서, 이하 “앱”)는 부동산 중개 업무를 위한
-        일정·매물·고객 정보 관리, 알림, 음성 등록, 수신전화 메모 기능을
-        제공합니다. 본 방침은 앱이 처리하는 정보와 이용자 권리에 대해
-        설명합니다.
-      </p>
+    <h2>1. 개인정보의 처리 목적</h2>
+    <p>
+      픽AI(이하 “서비스”)는 회원 인증, 서비스 제공, 관심종목 관리, AI 분석 기능 제공,
+      포인트·멤버십 운영, 문의 대응, 보안 및 부정 이용 방지를 위해 필요한 범위에서 개인정보를 처리합니다.
+    </p>
 
-      <div class="note">
-        <strong>요약:</strong> 일정·고객·전화번호·매물·메모·앱 설정 등
-        <strong>업무 데이터는 사용자 기기에만 저장</strong>되며 MoA 운영 서버로
-        전송하지 않습니다. 앱은 <strong>로그인 없이 둘러볼 수 있으나</strong>,
-        일정·매물·고객 등록, 음성 등록, 수신전화 메모 등
-        <strong>실제 업무 기능을 사용하려면 Google 또는 네이버 로그인이
-        필요</strong>합니다. 로그인을 이용하면 계정 식별 정보와 로그인 세션이
-        서버(Firebase Firestore)에 저장됩니다. 앱은 통화 기록(CALL_LOG)과 SMS
-        내용을 읽지 않으며, 외부 AI 서비스(OpenAI 등)를 사용하지 않습니다.
-      </div>
+    <h2>2. 처리하는 개인정보 항목</h2>
+    <p>서비스는 다음 정보를 처리할 수 있습니다. 소셜 로그인 제공자가 제공하지 않는 항목은 수집되지 않을 수 있습니다.</p>
+    <ul>
+      <li>
+        <strong>Google 로그인:</strong> Google 계정 식별자, 이메일, 이름(닉네임으로 사용), 프로필 이미지(제공되는 경우)
+      </li>
+      <li>
+        <strong>Naver 로그인:</strong> Naver 계정 식별자, 이메일, 닉네임, 이름(제공되는 경우), 프로필 이미지(제공되는 경우)
+      </li>
+      <li>
+        <strong>계정·서비스 이용 정보(서버 저장):</strong> 내부 사용자 식별자, 로그인 세션, 관심종목, AI 분석 기록,
+        포인트 지갑 잔액 및 포인트 거래 내역, 포인트 예약(차감) 기록, 멤버십(플랜) 정보
+      </li>
+      <li>
+        <strong>무료 체험 포인트 중복 지급 방지:</strong> 앱 설치 식별값(installationId)은 원본 형태로 저장하지 않고,
+        서버에서 HMAC 해시값(installation_id_hash)으로 변환하여 처리할 수 있습니다.
+      </li>
+      <li>
+        <strong>유료 상품 구매(해당 기능 이용 시):</strong> Google Play 구매 검증을 위해 상품 ID, 구매 토큰, 주문 ID 등
+        Google Play에서 발급된 구매 식별 정보가 서버에 기록될 수 있습니다.
+      </li>
+      <li>
+        <strong>투자 부적 생성 기능(이용 시):</strong> 생성 요청 정보 및 생성된 이미지가 서버에 저장될 수 있습니다.
+      </li>
+      <li>
+        <strong>최근 본 종목:</strong> 사용자 기기(앱 내부 저장소)에 로컬로 저장될 수 있으며, 서버 DB에 별도로 저장되지 않습니다.
+      </li>
+      <li>
+        <strong>차트 이미지 분석(이용자가 선택한 경우):</strong> 업로드·촬영한 차트 이미지는 분석 처리를 위해 서버를 경유하여
+        AI API로 전송될 수 있습니다. 차트 이미지 파일 자체를 서버에 장기 보관하지 않을 수 있으며,
+        분석 결과 요약은 AI 분석 기록에 포함될 수 있습니다.
+      </li>
+      <li>
+        <strong>자동 생성 정보:</strong> 접속 일시, IP 주소, 기기·앱 정보, 오류 및 보안 로그
+      </li>
+    </ul>
+    <p>서비스는 소셜 계정의 비밀번호를 수집하거나 저장하지 않습니다. OAuth 클라이언트 시크릿 등 서버 인증 비밀키는 이용자에게 공개되지 않습니다.</p>
 
-      <h2>1. 수집·이용하는 정보</h2>
+    <h2>3. 보관 및 파기</h2>
+    <p>
+      회원 정보와 서버에 저장된 서비스 이용 기록은 회원 탈퇴(계정 삭제) 시 지체 없이 삭제됩니다.
+      다만 관계 법령에 따른 보관 의무가 있거나, 분쟁·부정 이용 방지를 위해 필요한 정보는
+      해당 목적에 필요한 최소 범위에서 별도로 보관할 수 있습니다.
+    </p>
+    <p>
+      회원 탈퇴 후에도 무료 체험 포인트 중복 지급 방지를 위해, 소셜 로그인 제공자와 제공자별 계정 식별자
+      (이메일·닉네임이 아닌 provider + provider_user_id)가 <code>welcome_bonus_social_claims</code> 등에
+      유지될 수 있습니다.
+    </p>
+    <p>기기에 로컬 저장된 최근 본 종목 정보는 앱 삭제 또는 기기 저장소 삭제 시 제거될 수 있습니다.</p>
 
-      <h3>1-1. 업무 데이터(기기 내부 저장)</h3>
-      <p>
-        다음 정보는 앱 기능 제공을 위해 사용자 기기(앱 내부 저장소)에 저장되며,
-        <strong>현재 구현 기준으로 MoA 운영 서버로 전송하지 않습니다.</strong>
-      </p>
-      <table>
-        <thead>
-          <tr>
-            <th>항목</th>
-            <th>이용 목적</th>
-            <th>보관 위치</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>일정 정보(고객명, 전화번호, 방문일·시간, 장소, 메모, 알림 설정 등)</td>
-            <td>일정 등록·조회·수정·삭제·알림</td>
-            <td>기기 내부 저장</td>
-          </tr>
-          <tr>
-            <td>고객명·전화번호(일정·매물에 함께 저장되는 연락처 정보)</td>
-            <td>업무 기록, 전화 걸기·문자 앱 실행 보조</td>
-            <td>기기 내부 저장</td>
-          </tr>
-          <tr>
-            <td>매물 정보(주소, 세입자, 메모 등)</td>
-            <td>매물 등록·조회·수정·삭제</td>
-            <td>기기 내부 저장</td>
-          </tr>
-          <tr>
-            <td>메모(일정·매물·수신전화 메모 관련 내용)</td>
-            <td>업무 기록 및 수신전화 시 관련 정보 표시</td>
-            <td>기기 내부 저장</td>
-          </tr>
-          <tr>
-            <td>음성 인식 결과(인식된 텍스트)</td>
-            <td>음성으로 일정·매물 등록, 로컬 파싱</td>
-            <td>기기 내부 저장(텍스트)</td>
-          </tr>
-          <tr>
-            <td>앱 설정(언어, 기본 알림, 알림음, 수신전화 메모 on/off 등)</td>
-            <td>앱 환경 유지</td>
-            <td>기기 내부 저장</td>
-          </tr>
-          <tr>
-            <td>수신전화 메모 매칭 정보(등록된 번호·관련 일정 요약)</td>
-            <td>등록 번호 수신 시 관련 메모/일정 표시</td>
-            <td>기기 내부 저장·처리</td>
-          </tr>
-          <tr>
-            <td>다른 앱에서 공유한 텍스트(전화번호 포함 가능)</td>
-            <td>일정 등록 시 번호 입력 보조</td>
-            <td>기기 내부에서 일시 처리</td>
-          </tr>
-        </tbody>
-      </table>
+    <h2>4. 제3자 제공</h2>
+    <p>
+      이용자의 동의 또는 법령상 근거가 있는 경우를 제외하고 개인정보를 제3자에게 판매하거나 제공하지 않습니다.
+    </p>
 
-      <h3>1-2. 음성 기능 처리 방식</h3>
-      <p>
-        음성 등록 기능은 사용자가 마이크 입력을 시작할 때 동작합니다.
-      </p>
-      <ul>
-        <li>
-          <strong>음성 인식:</strong> 기기 또는 운영체제(OS)가 제공하는 음성
-          인식 기능을 사용합니다.
-        </li>
-        <li>
-          <strong>일정·매물 파싱:</strong> 인식된 텍스트는 앱 내부의 로컬
-          파서(parser)에서 처리되어 일정·매물 정보로 변환됩니다.
-        </li>
-        <li>
-          <strong>서버 전송 없음:</strong> MoA는 음성 원본 파일, 음성 인식
-          결과, 일정·매물·고객 등 업무 내용을 MoA 운영 서버나 외부 AI
-          서비스(OpenAI 등)로 전송하지 않습니다.
-        </li>
-        <li>
-          <strong>OS 음성 인식 서비스:</strong> 기기·OS 음성 인식 기능을
-          사용하는 경우, 해당 기능의 처리 방식에는 기기 제조사·OS·음성 인식
-          서비스 제공자의 정책이 적용될 수 있습니다.
-        </li>
-      </ul>
+    <h2>5. 처리 위탁 및 AI 분석(API 연동)</h2>
+    <p>서비스는 다음과 같은 외부 서비스를 이용할 수 있습니다.</p>
+    <ul>
+      <li><strong>Google / Naver:</strong> 소셜 로그인 인증</li>
+      <li><strong>금융·시세 데이터 제공자:</strong> 시세·종목 정보 조회</li>
+      <li><strong>OpenAI:</strong> AI 종목 분석 및 차트 이미지 분석</li>
+      <li><strong>클라우드 서버:</strong> 서비스 운영 및 데이터 저장</li>
+    </ul>
 
-      <h3>1-3. 로그인 계정 데이터(서버 저장)</h3>
-      <p>
-        Google 또는 네이버 로그인은 업무 기능을 사용하기 위해 필요합니다.
-        로그인하지 않아도 앱 화면을 둘러볼 수 있으나, 일정·매물·고객 등록,
-        음성 등록, 수신전화 메모 설정 등 실제 업무 기능을 사용하려면 로그인이
-        필요합니다.
-      </p>
-      <p>
-        로그인을 이용하면 아래 정보가 MoA 인증 서버 및 Firebase Firestore에
-        저장될 수 있습니다. 업무 데이터(일정·매물·고객 등)의 원격
-        백업·동기화는 현재 제공하지 않습니다.
-      </p>
-      <table>
-        <thead>
-          <tr>
-            <th>항목</th>
-            <th>이용 목적</th>
-            <th>보관 위치</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>소셜 로그인 제공자(Google/Naver), 제공자 사용자 식별자</td>
-            <td>계정 식별, 중복 가입 방지, 로그인 세션 연결</td>
-            <td>운영자 서버 / Firebase Firestore</td>
-          </tr>
-          <tr>
-            <td>이메일(제공·동의한 경우)</td>
-            <td>계정 프로필 표시 및 계정 관리</td>
-            <td>운영자 서버 / Firebase Firestore</td>
-          </tr>
-          <tr>
-            <td>닉네임 또는 이름(제공·동의한 경우)</td>
-            <td>계정 프로필 표시</td>
-            <td>운영자 서버 / Firebase Firestore</td>
-          </tr>
-          <tr>
-            <td>프로필 이미지 URL(제공·동의한 경우)</td>
-            <td>계정 프로필 표시</td>
-            <td>운영자 서버 / Firebase Firestore</td>
-          </tr>
-          <tr>
-            <td>MoA 자체 로그인 세션 정보(세션 토큰 해시, 만료 시각 등)</td>
-            <td>로그인 상태 유지 및 인증</td>
-            <td>서버에 세션 기록 저장. 기기의 보안 저장소에는 세션 토큰 보관</td>
-          </tr>
-          <tr>
-            <td>네이버 연동 해제용 토큰(네이버 로그인 이용 시, 암호화 저장)</td>
-            <td>회원 탈퇴 시 네이버 연동 해제 처리</td>
-            <td>운영자 서버 / Firebase Firestore(앱에는 장기 저장하지 않음)</td>
-          </tr>
-        </tbody>
-      </table>
-      <p>
-        Google 계정과 네이버 계정은 이메일이 같아도 자동으로 하나의 계정으로
-        병합하지 않으며, 각 제공자의 사용자 식별자를 기준으로 관리합니다.
-      </p>
+    <h2>6. OpenAI로 전송되는 정보</h2>
+    <p>AI 분석 요청 시 OpenAI API로 다음과 같은 정보가 전송될 수 있습니다. 계정 식별·결제 정보는 포함하지 않습니다.</p>
+    <ul>
+      <li>
+        <strong>종목 AI 분석:</strong> 종목 코드(symbol), 종목명, 시장(market), 섹터(있는 경우),
+        시세·캔들·기술지표 등 분석에 필요한 시장 데이터
+      </li>
+      <li>
+        <strong>차트 이미지 AI 분석:</strong> 이용자가 선택한 차트 이미지, 종목 코드·종목명·시장,
+        봉 주기(timeframe), 분석에 필요한 가격 관련 정보
+      </li>
+    </ul>
+    <p>다음 정보는 OpenAI API 요청에 포함되지 않도록 서버에서 처리합니다.</p>
+    <ul>
+      <li>이메일, 닉네임, 내부 사용자 ID(userId)</li>
+      <li>포인트 잔액·거래 내역, 결제·구매 정보</li>
+      <li>로그인 세션 토큰, OAuth 비밀키</li>
+    </ul>
 
-      <h2>2. 기기 권한</h2>
-      <p>앱이 실제로 선언·사용하는 주요 권한은 다음과 같습니다.</p>
-      <ul>
-        <li>
-          <strong>인터넷:</strong> 로그인·앱 업데이트 확인 등 네트워크 기능
-        </li>
-        <li>
-          <strong>알림(POST_NOTIFICATIONS):</strong> 일정 알림 및 수신전화 메모
-          알림 표시
-        </li>
-        <li>
-          <strong>마이크(RECORD_AUDIO):</strong> 음성으로 일정·매물 등록(사용자가
-          음성 입력을 시작할 때)
-        </li>
-        <li>
-          <strong>오디오 설정(MODIFY_AUDIO_SETTINGS):</strong> 음성 입력·알림음
-          재생을 위한 오디오 설정
-        </li>
-        <li>
-          <strong>전화 상태(READ_PHONE_STATE):</strong> 수신전화 메모 사용 시
-          통화 종료 후 알림을 정리하기 위해 사용합니다.
-          <strong>통화 기록(CALL_LOG)은 읽지 않습니다.</strong>
-        </li>
-        <li>
-          <strong>연락처(READ_CONTACTS, 선택):</strong> 수신전화 메모(Call
-          Screening) 기능과 관련하여 Android가 요구할 수 있는 권한입니다. 앱은
-          연락처 데이터베이스를 조회해 목록을 수집·저장하거나 서버로 전송하지
-          않습니다. 수신전화 메모는 앱에 등록된 일정/매물 전화번호와 발신번호를
-          기기 안에서 대조합니다.
-        </li>
-        <li>
-          <strong>발신자 확인(Call Screening) 역할(선택):</strong> 등록된 번호로
-          전화가 왔을 때 관련 일정·메모를 표시합니다. 통화를 차단하거나 스팸
-          판별에 사용하지 않습니다.
-        </li>
-        <li>
-          <strong>전체 화면 알림(USE_FULL_SCREEN_INTENT):</strong> 잠금 화면에서
-          일정 알림·수신전화 메모 표시
-        </li>
-        <li>
-          <strong>포그라운드 서비스:</strong> 수신전화 메모 등 짧은 백그라운드
-          처리
-        </li>
-        <li>
-          <strong>진동·깨우기(WAKE_LOCK 등):</strong> 알림 표시를 위한 시스템
-          권한
-        </li>
-      </ul>
-      <p>
-        수신전화 메모, 연락처·전화 상태 권한, Call Screening 역할은
-        <strong>선택 기능</strong>입니다. 허용하지 않아도 일정·매물 등록 등 다른
-        업무 기능을 사용할 수 있습니다(해당 기능 사용 시 로그인은 필요합니다).
-      </p>
+    <h2>7. 이용자의 권리 및 계정 삭제</h2>
+    <p>
+      이용자는 앱에서 로그아웃하거나 계정을 삭제할 수 있습니다.
+      계정 삭제 방법과 삭제·유지되는 데이터는
+      <a href="account-deletion.html">계정 및 데이터 삭제 안내</a>를 참고해 주세요.
+    </p>
 
-      <h2>3. 읽지 않는 정보</h2>
-      <ul>
-        <li>
-          통화 기록(통화목록) — 앱은
-          <code>READ_CALL_LOG</code> 권한을 선언·사용하지 않습니다.
-        </li>
-        <li>
-          SMS·문자 메시지 내용 — 앱은
-          <code>READ_SMS</code> 권한을 선언·사용하지 않습니다.
-        </li>
-        <li>연락처 목록 전체(이름·번호 목록을 수집·저장·전송하지 않음)</li>
-        <li>위치 정보</li>
-      </ul>
+    <h2>8. 안전성 확보 조치</h2>
+    <ul>
+      <li>HTTPS 전송</li>
+      <li>인증 토큰의 안전한 저장</li>
+      <li>서버 접근 권한 제한</li>
+      <li>API 비밀키의 앱 외부 보관</li>
+    </ul>
 
-      <h2>4. 수신전화 메모</h2>
-      <p>
-        수신전화 메모는 사용자가 기능을 켠 경우에만 동작합니다. 앱에 저장된
-        일정·매물의 전화번호와 수신 발신번호를 기기 안에서 대조하고, 일치하면
-        관련 메모·일정 요약을 알림 또는 오버레이로 표시합니다. 이 과정에서
-        사용하는 발신번호와 대조 정보는 기기 내부에서 처리되며 MoA 운영 서버로
-        전송하지 않습니다.
-      </p>
+    <h2>9. 문의</h2>
+    <p>
+      서비스 운영자: 픽AI<br />
+      문의 이메일: <a href="mailto:uyh00001@gmail.com">uyh00001@gmail.com</a><br />
+      <a href="contact.html">문의하기 페이지</a>
+    </p>
 
-      <h2>5. 제3자 서비스</h2>
-      <p>
-        앱은 이용자가 입력한 일정·매물·고객 등 업무 데이터를 MoA 운영 서버에
-        업로드하거나 판매하지 않습니다. 외부 AI 서비스(OpenAI 등)를 이용하여
-        음성·텍스트를 분석하지 않습니다. 로그인 및 서비스 운영을 위해 다음
-        외부 서비스를 이용할 수 있습니다.
-      </p>
-      <ul>
-        <li>
-          <strong>Google:</strong> Google 로그인 인증
-        </li>
-        <li>
-          <strong>네이버:</strong> 네이버 로그인 인증 및(회원 탈퇴 시) 연동 해제
-        </li>
-        <li>
-          <strong>Firebase Firestore(Google):</strong> 로그인 계정·세션 등 인증
-          정보 저장
-        </li>
-        <li>
-          <strong>Expo Updates:</strong> 앱 업데이트 배포 확인(업무 데이터 전송
-          목적 아님)
-        </li>
-      </ul>
-      <p>
-        사용자가 전화·문자·메일 앱을 직접 실행하는 경우 해당 OS·앱의 정책이
-        적용됩니다. 기기·OS 음성 인식 기능을 사용하는 경우 해당 서비스
-        제공자의 정책이 적용될 수 있습니다. 서비스 제공 과정에서 국외 서버에서
-        계정 정보가 처리될 수 있습니다.
-      </p>
-
-      <h2>6. 보관 기간 및 파기</h2>
-      <ul>
-        <li>
-          <strong>로컬 업무 데이터:</strong> 사용자가 앱에서 해당 항목을
-          삭제하거나, 기기 설정에서 앱 데이터를 삭제하거나, 앱을 제거할 때까지
-          기기에 보관됩니다.
-        </li>
-        <li>
-          <strong>로그인 계정 정보:</strong> 서버의 사용자·소셜 계정·세션 등은
-          회원 탈퇴 시 삭제합니다. 로그인 세션은 로그아웃, 회원 탈퇴 또는
-          유효기간 만료 시 삭제됩니다.
-        </li>
-        <li>
-          <strong>로그아웃:</strong> 서버 세션을 종료하고 기기의 로그인 상태만
-          제거합니다. 로컬 일정·매물·고객·메모 등 업무 데이터는 삭제하지
-          않습니다.
-        </li>
-        <li>
-          <strong>회원 탈퇴:</strong> 서버의 MoA 계정, 소셜 계정 연결, 세션,
-          저장된 네이버 연동 해제용 토큰(해당 시)을 삭제합니다. Google 계정
-          자체나 네이버 계정 자체를 삭제하지 않으며, 네이버의 경우 가능하면
-          연동 해제를 시도합니다.
-          <strong
-            >회원 탈퇴 시에도 이 기기에 저장된 일정·매물·고객·메모 등 업무
-            데이터는 자동 삭제하지 않습니다.</strong
-          >
-          서버 계정·인증 정보와 기기 내 업무 데이터는 별도로 관리됩니다.
-        </li>
-      </ul>
-
-      <h2>7. 이용자 권리</h2>
-      <ul>
-        <li>앱 내에서 일정·매물 등 업무 데이터를 수정·삭제할 수 있습니다.</li>
-        <li>
-          설정 &gt; 계정에서 로그인, 로그아웃, 회원 탈퇴를 요청할 수 있습니다.
-        </li>
-        <li>
-          기기 설정에서 알림·마이크·연락처·전화 상태 권한 및 Call Screening
-          역할을 언제든 변경·철회할 수 있습니다.
-        </li>
-        <li>
-          개인정보 관련 문의는
-          <a href="mailto:uyh00001@gmail.com">uyh00001@gmail.com</a>으로 연락해
-          주세요.
-        </li>
-      </ul>
-
-      <h2>8. 아동의 개인정보</h2>
-      <p>
-        앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를
-        고의로 수집하지 않습니다.
-      </p>
-
-      <h2>9. 방침 변경</h2>
-      <p>
-        법령·기능 변경 시 본 방침을 수정할 수 있으며, 중요한 변경은 앱 또는 본
-        페이지를 통해 안내합니다.
-      </p>
-
-      <h2>10. 문의처</h2>
-      <p>
-        앱명: MoA(중개비서)<br />
-        이메일: <a href="mailto:uyh00001@gmail.com">uyh00001@gmail.com</a><br />
-        공개 URL:
-        <a href="https://uyh11225-source.github.io/moa-privacy/privacy-policy.html"
-          >https://uyh11225-source.github.io/moa-privacy/privacy-policy.html</a
-        >
-      </p>
-    </main>
-  </body>
+    <div class="footer">
+      <a href="terms.html">이용약관</a> ·
+      <a href="contact.html">문의하기</a> ·
+      <a href="account-deletion.html">계정 삭제 안내</a>
+    </div>
+  </div>
+</body>
 </html>
