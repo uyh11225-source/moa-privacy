@@ -73,7 +73,7 @@
     <main>
       <h1>MoA 계정 삭제 안내</h1>
       <p class="meta">
-        MoA(중개비서) · 문의:
+        MoA · 최종 수정: 2026년 9월 22일 · 문의:
         <a href="mailto:uyh00001@gmail.com">uyh00001@gmail.com</a>
       </p>
 
@@ -84,9 +84,12 @@
       </p>
 
       <div class="note">
-        <strong>요약:</strong> 회원 탈퇴 시 서버에 저장된 MoA 계정·로그인
-        정보가 삭제됩니다. 일정·매물·고객·메모 등
-        <strong>기기에 저장된 업무 데이터는 자동으로 삭제되지 않습니다.</strong>
+        <strong>요약:</strong> 회원 탈퇴가 완료되면 MoA 인증 서버의 계정·로그인
+        정보와 <strong>MoA Cloud API에 동기화된 일정·매물 데이터</strong>가
+        삭제됩니다. 기기에 저장된 일정·매물·고객·메모 등
+        <strong>로컬 업무 데이터는 자동으로 삭제되지 않습니다.</strong>
+        무료 사용(체험) 중복 방지를 위한 Trial identity ledger 기록은
+        <strong>별도로 유지될 수 있습니다</strong>(아래).
       </div>
 
       <h2>앱에서 계정 삭제하기</h2>
@@ -94,18 +97,41 @@
       <ol class="steps">
         <li>MoA 앱 실행</li>
         <li>설정</li>
-        <li>계정</li>
+        <li>앱 정보</li>
         <li>회원 탈퇴</li>
-        <li>안내 확인 후 탈퇴 진행</li>
+        <li>안내 확인 후 탈퇴 진행(2단계 확인)</li>
+      </ol>
+
+      <h2>탈퇴 처리 순서(서버)</h2>
+      <p>
+        앱에서 회원 탈퇴를 요청하면 MoA 인증 서버는 대략 다음 순서로 처리합니다.
+      </p>
+      <ol>
+        <li>
+          로그인 세션으로 MoA Cloud API에 저장된 해당 계정의 일정·매물 데이터
+          삭제를 요청합니다.
+        </li>
+        <li>
+          위 클라우드 삭제가 성공한 경우에만 Firestore 등 인증 서버의 MoA
+          사용자 계정·소셜 연결·세션·네이버 연동 해제용 토큰(해당 시)을
+          삭제합니다.
+        </li>
+        <li>
+          클라우드 삭제에 실패하면 탈퇴가 완료되지 않을 수 있으며, 앱에 오류
+          메시지가 표시될 수 있습니다.
+        </li>
       </ol>
 
       <h2>삭제되는 서버 데이터</h2>
       <p>회원 탈퇴가 완료되면 다음 정보가 MoA 서버에서 삭제됩니다.</p>
       <ul>
-        <li>MoA 사용자 계정</li>
+        <li>MoA 사용자 계정(Firestore 등 인증 서버)</li>
         <li>Google/Naver 소셜 계정 연결 정보</li>
         <li>로그인 세션</li>
         <li>네이버 연동 해제용 토큰(네이버 로그인 이용 시)</li>
+        <li>
+          MoA Cloud API에 저장된 해당 계정의 일정·매물 동기화 데이터
+        </li>
       </ul>
       <p>
         Google 계정 또는 네이버 계정 자체는 삭제되지 않으며, MoA 서비스와의
@@ -113,14 +139,35 @@
         시도합니다.
       </p>
 
-      <h2>삭제되지 않는 기기 내부 데이터</h2>
+      <h2>삭제되지 않거나 유지될 수 있는 정보</h2>
+      <h3>Trial identity ledger(무료 사용 중복 방지)</h3>
       <p>
-        아래 데이터는 회원 탈퇴만으로 자동 삭제되지 않으며, 사용자 기기에
-        남아 있을 수 있습니다.
+        동일 Google 또는 네이버 로그인으로 무료 사용을 반복하지 않도록, MoA
+        인증 서버(Firebase Firestore)에 다음과 같은 <strong>제한된 기록</strong>이
+        남을 수 있습니다. 회원 탈퇴 후에도 이 ledger는 삭제하지 않을 수
+        있습니다.
+      </p>
+      <ul>
+        <li>
+          문서 ID: 소셜 제공자·제공자 사용자 식별자를 서버 전용 비밀값으로
+          HMAC-SHA256한 값(원문 식별자·이메일·이름·전화번호·토큰을 ledger
+          필드에 저장하지 않음)
+        </li>
+        <li>
+          저장 필드 예: <code>trialConsumed</code>,
+          <code>firstTrialStartedAt</code>, <code>firstTrialEndedAt</code>,
+          <code>createdAt</code>, <code>updatedAt</code>
+        </li>
+      </ul>
+
+      <h3>기기 내부 업무 데이터</h3>
+      <p>
+        아래 데이터는 회원 탈퇴만으로 자동 삭제되지 않으며, 사용자 기기에 남아
+        있을 수 있습니다.
       </p>
       <ul>
         <li>일정</li>
-        <li>고객</li>
+        <li>고객(일정·매물에 포함된 연락처 정보)</li>
         <li>전화번호</li>
         <li>매물</li>
         <li>메모</li>
